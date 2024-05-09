@@ -1,0 +1,2 @@
+(let (p (vec 10 20))
+    (+ (vec-get p 0) (vec-get p 1)))

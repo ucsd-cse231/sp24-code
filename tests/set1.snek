@@ -1,0 +1,4 @@
+(let (sum 0) 
+  (if input 
+    (set! sum (+ sum 10))
+    (set! sum (+ sum 20))))

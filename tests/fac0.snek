@@ -1,0 +1,7 @@
+(defn (fac0 n)
+  (+ n 1))
+
+(defn (fac1 n)
+  (+ n (fac0 n)))
+
+(fac1 5)

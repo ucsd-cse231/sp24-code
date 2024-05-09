@@ -1,0 +1,22 @@
+(defn (sum n acc)
+  (if (= n 0)
+    acc
+    (sum (+ n -1) (+ acc n))))
+
+(defn (foo n z)
+  (if (= n 0)
+    (print 0)
+    (block
+      (foo (+ n -1) z)
+      (print n)
+    )
+  )
+)
+
+(foo input 0)
+
+(defn (foo n)
+  (let (x (foo (+ n -1)))
+    x
+  )
+)

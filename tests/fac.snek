@@ -1,0 +1,8 @@
+(defn (fac n)
+    (let (res (if (= n 0)
+                 1
+                 (* n (fac (+ n -1)))))
+      (block (print n)
+             (print res))))
+
+(fac input)

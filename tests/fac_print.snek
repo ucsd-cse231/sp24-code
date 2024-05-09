@@ -1,0 +1,11 @@
+(defn (fac n)
+  (let (t (print n))
+    (let (res (if (= n 0)
+                1
+                (* n (fac (+ n -1)))))
+       (print res)
+    )
+  )
+)
+
+(fac input)

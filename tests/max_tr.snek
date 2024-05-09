@@ -1,0 +1,4 @@
+(defn (max x y)
+  (if (<= x y) y (max y x)))
+
+(max input 10)

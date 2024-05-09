@@ -1,0 +1,3 @@
+(defn (add x y) x)
+
+(add 10 20)

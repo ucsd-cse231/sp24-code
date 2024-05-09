@@ -1,0 +1,4 @@
+(defn (sub x y)
+   (print x))
+
+(sub 10 1)

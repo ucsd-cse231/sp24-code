@@ -1,0 +1,36 @@
+section .text
+global our_code_starts_here
+extern snek_error
+extern snek_print
+label_error:
+  push rsp
+  call snek_error
+our_code_starts_here:
+ push rbp
+ mov rbp, rsp
+ sub rsp, 8*10
+ mov [rbp - 8], rdi
+ ;; mov r11, rsi               ;; save start of heap in r11
+ jmp fun_finish_sum
+fun_start_sum:
+  push rbp
+  mov rbp, rsp
+  sub rsp, 8*3
+fun_body_sum:
+  mov rax, 500
+fun_exit_sum:
+ mov rsp, rbp
+ pop rbp
+ ret
+fun_finish_sum:
+ mov rax, fun_start_sum
+ mov [rbp - 8*2], rax
+ mov rax, [rbp - 8]
+ mov [rbp - 8*3], rax
+ mov rcx, [rbp - 8*3]
+ push rcx
+ call fun_start_sum
+ add rsp, 8*1
+ mov rsp, rbp
+ pop rbp
+ ret

@@ -1,0 +1,9 @@
+(let (sum 0)
+  (let (i input)
+    (loop
+        (if (= i 0)
+            (break sum)
+            (block
+                (set! sum (+ sum i))
+                (set! i (+ i -1))
+            )))))

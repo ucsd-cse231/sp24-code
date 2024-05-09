@@ -1,0 +1,11 @@
+(defn (even n z)
+  (if (= n 0)
+    true
+    (odd (+ n -1) z)))
+
+(defn (odd m z)
+  (if (= m 0)
+    false
+    (even (+ m -1) z)))
+
+(even input 0)

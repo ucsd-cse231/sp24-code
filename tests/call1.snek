@@ -1,0 +1,4 @@
+(defn (sumsquare x y)
+  (+ (* x x) (* y y)))
+
+(sumsquare (* 2 input) (+ 30 (* 3 input)))

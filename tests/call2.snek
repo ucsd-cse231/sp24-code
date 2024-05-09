@@ -1,0 +1,3 @@
+(defn (foo x) (+ x 1))
+(defn (bar y) (+ 1 (foo y)))
+(bar 10)

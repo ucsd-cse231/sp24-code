@@ -1,0 +1,5 @@
+(let (foo (fn (x) (+ x 1))) 
+  (let (bar (fn (y) (+ 1 (foo y))))
+    (bar 10)
+  )
+)

@@ -1,0 +1,7 @@
+(let (a 1)
+   (let (c
+      (let (b (add1 a))
+         (add1 b)
+      )
+   )
+   (add1 c)))

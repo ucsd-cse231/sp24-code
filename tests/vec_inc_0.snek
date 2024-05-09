@@ -1,0 +1,6 @@
+(defn (inc off xs)
+ (if (= xs false)
+   false
+   (vec (+ (vec-get xs 0) off) (inc off (vec-get xs 1)))))
+
+(inc input (vec 10 (vec 20 (vec 30 false))))

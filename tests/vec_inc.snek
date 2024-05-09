@@ -1,0 +1,10 @@
+(defn (head l) (vec-get l 0))
+
+(defn (tail l) (vec-get l 1))
+
+(defn (inc off xs)
+ (if (= xs false)
+   false
+   (vec (+ (head xs) off) (inc off (tail xs)))))
+
+(inc input (vec 10 (vec 20 (vec 30 false))))

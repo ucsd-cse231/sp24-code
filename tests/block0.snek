@@ -1,0 +1,9 @@
+(let (sum 0)
+  (block
+    (set! sum (+ sum 10))
+    (set! sum (+ sum 10))
+    (set! sum (+ sum 10))
+    (set! sum (+ sum 10))
+    (set! sum (+ sum 10))
+  )
+)

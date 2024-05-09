@@ -1,0 +1,3 @@
+(let (incr (defn (incr x)  (+ x 1)))
+  (let (f    (defn (f it) (it 5)))
+    (f incr)))
