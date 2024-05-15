@@ -69,7 +69,7 @@ fun_exit_anon_2:
   ret
 fun_finish_anon_2:
  ;; allocate tuple for fun_start_anon_2
-  mov rax, fun_start_anon_2
+  lea rax, QWORD [rel fun_start_anon_2]
   mov [r11], rax         ;; save label
   mov rax, 1
   mov [r11 + 8], rax     ;; save arity = 1
